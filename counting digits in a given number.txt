@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdbool.h>
+#include<math.h>
+int main()
+{
+long int number,count=0;
+scanf("%d",&number);
+while(number)
+{
+count++;
+number=number/10;
+}
+printf("%d",count);
+return 0;
+}
+
