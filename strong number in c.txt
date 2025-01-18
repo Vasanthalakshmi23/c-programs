@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdbool.h>
+#include<math.h>
+int main()
+{
+int number,factorial,sum=0,temp,digit;
+scanf("%d",&number);
+temp=number;
+while(temp)
+{
+digit=temp%10;
+factorial=1;
+while(digit)
+{
+factorial *=digit;
+digit--;
+}
+sum+=factorial;
+temp/=10;
+}
+if(sum==number)
+printf("yes");
+else
+printf("no");
+return 0;
+}
