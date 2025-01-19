@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+#include<stdlib.h>
+int main()
+{
+int n,limit;
+scanf("%d %d", &limit,&n);
+for(int it=1; it<=limit; it++)
+{
+printf("%d * %d = %d\n", it,n, it*n);
+}
+return 0;
+}
