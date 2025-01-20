@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int start,end, flag;
+scanf(" %d %d ", &start,&end);
+for(int i=start; i<=end; i++)
+{
+bool flag =true;
+for(int num=2; num<=sqrt(i)+1; num++)
+{
+if(i%num==0)
+{
+flag=false;
+break;
+}
+}
+if(flag)printf(" %d ", i);
+}
+return 0;
+}
