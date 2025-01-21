@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+float v,a,d,t;
+printf("enter velocity,acceleration,time");
+scanf("%f %f %f",&v,&a,&t);
+d=(v*t)+(a*t*/2);
+printf("d=%f",d);
+}
